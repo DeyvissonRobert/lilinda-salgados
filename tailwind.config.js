@@ -6,7 +6,7 @@ module.exports = {
       "sans": ['Roboto', 'sans-serif']
     },
     extend: {
-      backgroundImage: {"home": "url('/assets/bg.png')"}
+      backgroundImage: {"home": "url('/assets/bg2.png')"}
     },
   },
   plugins: [],
