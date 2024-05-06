@@ -8,6 +8,10 @@ const closeModalBtn = document.getElementById("close-modal-btn")
 const cartCounter = document.getElementById("cart-count")
 const addressInput = document.getElementById("address")
 const addressWarn = document.getElementById("address-warn")
+const complementInput = document.getElementById("complement")
+const complementWarn = document.getElementById("complement-warn")
+const yourNameInput = document.getElementById("your-name")
+const yourNameWarn = document.getElementById("your-name-warn")
 
 const addCartBtn = document.querySelector(".add-to-cart-btn")
 
@@ -152,6 +156,17 @@ function removeItemCart(name) {
     }
 }
 
+//Pegar nome do cliente dentro do input
+yourNameInput.addEventListener("input", function (event) {
+    let inputValue = event.target.value;
+
+    if (inputValue !== "") {
+        yourNameInput.classList.remove("border-red-500")
+        yourNameWarn.classList.add("hidden")
+    }
+
+})
+
 //Pegar endereço de entrega dentro do input
 addressInput.addEventListener("input", function (event) {
     let inputValue = event.target.value;
@@ -159,6 +174,17 @@ addressInput.addEventListener("input", function (event) {
     if (inputValue !== "") {
         addressInput.classList.remove("border-red-500")
         addressWarn.classList.add("hidden")
+    }
+
+})
+
+//Pegar complementpo dentro do input
+complementInput.addEventListener("input", function (event) {
+    let inputValue = event.target.value;
+
+    if (inputValue !== "") {
+        complementInput.classList.remove("border-red-500")
+        complementWarn.classList.add("hidden")
     }
 
 })
@@ -187,9 +213,22 @@ checkoutBtn.addEventListener("click", function () {
     }
 
     if (cart.length === 0) return;
+
+    if(yourNameInput.value === ""){
+        yourNameWarn.classList.remove("hidden")
+        yourNameInput.classList.add("border-red-500")
+        return;
+    }
+     
     if(addressInput.value === ""){
         addressWarn.classList.remove("hidden")
         addressInput.classList.add("border-red-500")
+        return;
+    }
+     
+    if(complementInput.value === ""){
+        complementWarn.classList.remove("hidden")
+        complementInput.classList.add("border-red-500")
         return;
     }
     //Enviar o pedido para api whats
@@ -202,7 +241,7 @@ checkoutBtn.addEventListener("click", function () {
     const message = encodeURIComponent(cartItems)
     const phone = "+5521982465701"
 
-    window.open(`https://wa.me/${phone}?text=${message} Endereço: ${addressInput.value}`, "_blank")
+    window.open(`https://wa.me/${phone}?text=${message} *Nome:* ${yourNameInput.value} *Endereço:* ${addressInput.value} *Complemento:* ${complementInput.value}`, "_blank")
 
     // cart.length = 0;
     cart = [];

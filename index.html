@@ -267,16 +267,28 @@
 
 
             <div id="cart-items"
-                class="mid max-h-[20rem] overflow-y-auto overflow-x-hidden flex justify-between mb-2 flex-col"></div>
+                class="mid max-h-[15rem] overflow-y-auto overflow-x-hidden flex justify-between mb-2 flex-col"></div>
 
             <p class="font-bold mt-4">Total: <span id="cart-total">0.00</span></p>
+
+            <p>Nome do Cliente:</p>
+            <input id="your-name" type="text" placeholder="Digite seu nome"
+                class="w-full border-2 p-1 rounded my-1">
+                
+            <p id="your-name-warn" class="text-red-500 font-bold hidden">Digite seu nome!</p>
 
             <p>Endereço de entrega:</p>
             <input id="address" type="text" placeholder="Digite seu endereço completo"
                 class="w-full border-2 p-1 rounded my-1">
-
+                  
             <p id="address-warn" class="text-red-500 font-bold hidden">Digite seu endereço completo!</p>
 
+            <p>Complemento:</p>
+            <input id="complement" type="text" placeholder="Digite um ponto de referencia"
+                class="w-full border-2 p-1 rounded my-1">
+                
+            <p id="complement-warn" class="text-red-500 font-bold hidden">Digite um ponto de referencia!</p>
+          
             <div class="flex items-center justify-between mt-5 w-full">
                 <button id="close-modal-btn">Fechar</button>
                 <button id="checkout-btn" class="bg-green-600 text-white px-4 py-1 rounded">Finalizar pedido</button>
