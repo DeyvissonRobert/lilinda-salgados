@@ -8,8 +8,8 @@ Neste repositório  foi desenvolvido um site com o cardápio de vendas com produ
 Deploy: https://lilinda-salgados.netlify.app/
 
 
-  
-![tela lilinda salgados](https://github.com/user-attachments/assets/b7cb754a-148a-4a6b-bf76-7a2c3ffcb5ff)
+![tela lilinda salgados](https://github.com/user-attachments/assets/cbe33800-f608-4bd9-a49c-778f047fb506)
+
 
 ##  Realização:
 
