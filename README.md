@@ -1,11 +1,22 @@
 <h1>📱  Projeto Cardápio de Loja de Salgados Fritos e Congelados  </h1>
 
+🍴 Transformando a experiência de pedidos online em uma loja de salgados!
 
-## 📋 Descrição
+## 📋 Descrição - Objetivo
+ desenvolver uma solução que melhora significativamente a experiência dos clientes ao visualizar e solicitar os produtos.
 
-Neste repositório  foi desenvolvido um site com o cardápio de vendas com produtos de loja utilizando  HTML, CSS, Tailwind e JavaScript . 
+--> Aqui estão as principais funcionalidades:
 
-Deploy: https://lilinda-salgados.netlify.app/
+• Gerenciamento de carrinho: Adição e remoção de itens. <br>
+• Conclusão de pedidos: Pedido concluído apenas com endereço inserido. <br>
+• Facilidades: Descrição e valor enviados via WhatsApp. <br>
+• Usabilidade: Pedidos permitidos apenas no horário de funcionamento. <br>
+• Benefícios: Maior praticidade e uma experiência de pedido online mais fluida. <br>
+
+Tudo isso foi desenvolvido com Tailwind, CSS, HTML e JavaScript.
+
+
+Site: https://lilinda-salgados.netlify.app/
 
 
 ![tela lilinda salgados](https://github.com/user-attachments/assets/cbe33800-f608-4bd9-a49c-778f047fb506)
